@@ -11,16 +11,16 @@
           },
           "Location": "uksouth",
           "Name": "Deploy-Private-DNS-Zones",
-          "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/ESPB/providers/Microsoft.Authorization/policyAssignments/Deploy-Private-DNS-Zones",
+          "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/ESPB/providers/Microsoft.Authorization/policyAssignments/Deny-Private-DNS-Zones",
           "Properties": {
-            "Description": "Private-DNS-Zones",
-            "DisplayName": "Private-DNS-Zones",
+            "Description": "Deny-Private-DNS-Zones",
+            "DisplayName": "Deny-Private-DNS-Zones",
             "NotScopes": null,
             "Parameters": null,
             "PolicyDefinitionId": "/providers/Microsoft.Management/managementGroups/ESPB/providers/Microsoft.Authorization/policyDefinitions/Deny-Private-DNS-Zones",
             "Scope": "/providers/Microsoft.Management/managementGroups/ESPB"
           },
-          "ResourceId": "/providers/Microsoft.Management/managementGroups/ESPB/providers/Microsoft.Authorization/policyAssignments/Deploy-Private-DNS-Zones",
+          "ResourceId": "/providers/Microsoft.Management/managementGroups/ESPB/providers/Microsoft.Authorization/policyAssignments/Deny-Private-DNS-Zones",
           "ResourceName": "Deploy-Private-DNS-Zones",
           "ResourceType": "Microsoft.Authorization/policyAssignments"
           
