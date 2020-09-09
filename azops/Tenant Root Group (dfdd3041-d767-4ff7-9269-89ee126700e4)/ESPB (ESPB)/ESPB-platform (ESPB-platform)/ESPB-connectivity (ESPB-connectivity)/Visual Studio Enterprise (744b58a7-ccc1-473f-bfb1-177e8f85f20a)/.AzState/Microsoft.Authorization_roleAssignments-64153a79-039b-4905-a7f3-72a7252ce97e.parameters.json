@@ -1,0 +1,20 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Id": "/subscriptions/744b58a7-ccc1-473f-bfb1-177e8f85f20a/providers/Microsoft.Authorization/roleAssignments/64153a79-039b-4905-a7f3-72a7252ce97e",
+        "Name": "64153a79-039b-4905-a7f3-72a7252ce97e",
+        "properties": {
+          "DisplayName": "Prakash Beegala",
+          "ObjectType": "User",
+          "PrincipalId": "dfd13bbc-b371-4ddd-99c8-c90c89c9c9b2",
+          "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c",
+          "RoleDefinitionName": "Contributor"
+        },
+        "ResourceType": "Microsoft.Authorization/roleAssignments"
+      }
+    }
+  }
+}

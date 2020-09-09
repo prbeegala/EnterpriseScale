@@ -1,0 +1,238 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Id": "/providers/Microsoft.Management/managementGroups/ESPB-landingzones",
+        "Type": "/providers/Microsoft.Management/managementGroups",
+        "Name": "ESPB-landingzones",
+        "TenantId": "dfdd3041-d767-4ff7-9269-89ee126700e4",
+        "DisplayName": "ESPB-landingzones",
+        "UpdatedTime": "0001-01-01T00:00:00Z",
+        "UpdatedBy": null,
+        "ParentId": "/providers/Microsoft.Management/managementGroups/ESPB",
+        "ParentName": "ESPB",
+        "ParentDisplayName": "ESPB",
+        "Children": [
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/ESPB-online",
+            "Name": "ESPB-online",
+            "DisplayName": "ESPB-online",
+            "Children": null
+          },
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/ESPB-sap",
+            "Name": "ESPB-sap",
+            "DisplayName": "ESPB-sap",
+            "Children": null
+          },
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/ESPB-corp",
+            "Name": "ESPB-corp",
+            "DisplayName": "ESPB-corp",
+            "Children": null
+          }
+        ],
+        "properties": {
+          "policyDefinitions": [],
+          "policySetDefinitions": [],
+          "policyAssignments": [
+            {
+              "Identity": null,
+              "Location": "uksouth",
+              "Name": "Deny-IP-forwarding",
+              "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/ESPB-landingzones/providers/Microsoft.Authorization/policyAssignments/Deny-IP-forwarding",
+              "Properties": {
+                "Description": "Deny-IP-Forwarding",
+                "DisplayName": "Deny-IP-Forwarding",
+                "NotScopes": null,
+                "Parameters": null,
+                "PolicyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/88c0b9da-ce96-4b03-9635-f29a937e2900",
+                "Scope": "/providers/Microsoft.Management/managementGroups/ESPB-landingzones"
+              },
+              "ResourceId": "/providers/Microsoft.Management/managementGroups/ESPB-landingzones/providers/Microsoft.Authorization/policyAssignments/Deny-IP-forwarding",
+              "ResourceName": "Deny-IP-forwarding",
+              "ResourceType": "Microsoft.Authorization/policyAssignments",
+              "Sku": {
+                "name": "A0",
+                "tier": "Free"
+              }
+            },
+            {
+              "Identity": null,
+              "Location": "uksouth",
+              "Name": "Deny-Storage-http",
+              "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/ESPB-landingzones/providers/Microsoft.Authorization/policyAssignments/Deny-Storage-http",
+              "Properties": {
+                "Description": "Enforce-Secure-Storage",
+                "DisplayName": "Enforce-Secure-Storage",
+                "NotScopes": null,
+                "Parameters": null,
+                "PolicyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/404c3081-a854-4457-ae30-26a93ef643f9",
+                "Scope": "/providers/Microsoft.Management/managementGroups/ESPB-landingzones"
+              },
+              "ResourceId": "/providers/Microsoft.Management/managementGroups/ESPB-landingzones/providers/Microsoft.Authorization/policyAssignments/Deny-Storage-http",
+              "ResourceName": "Deny-Storage-http",
+              "ResourceType": "Microsoft.Authorization/policyAssignments",
+              "Sku": {
+                "name": "A0",
+                "tier": "Free"
+              }
+            },
+            {
+              "Identity": null,
+              "Location": "uksouth",
+              "Name": "Deny-Subnet-Without-Nsg",
+              "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/ESPB-landingzones/providers/Microsoft.Authorization/policyAssignments/Deny-Subnet-Without-Nsg",
+              "Properties": {
+                "Description": "Deny-Subnet-Without-Nsg",
+                "DisplayName": "Deny-Subnet-Without-Nsg",
+                "NotScopes": null,
+                "Parameters": null,
+                "PolicyDefinitionId": "/providers/Microsoft.Management/managementGroups/ESPB/providers/Microsoft.Authorization/policyDefinitions/Deny-Subnet-Without-Nsg",
+                "Scope": "/providers/Microsoft.Management/managementGroups/ESPB-landingzones"
+              },
+              "ResourceId": "/providers/Microsoft.Management/managementGroups/ESPB-landingzones/providers/Microsoft.Authorization/policyAssignments/Deny-Subnet-Without-Nsg",
+              "ResourceName": "Deny-Subnet-Without-Nsg",
+              "ResourceType": "Microsoft.Authorization/policyAssignments",
+              "Sku": {
+                "name": "A0",
+                "tier": "Free"
+              }
+            },
+            {
+              "Identity": {
+                "principalId": "87442fef-8313-4b85-93f6-a19ad631b1fd",
+                "tenantId": "dfdd3041-d767-4ff7-9269-89ee126700e4",
+                "type": "SystemAssigned"
+              },
+              "Location": "uksouth",
+              "Name": "Deploy-SQL-DB-Auditing",
+              "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/ESPB-landingzones/providers/Microsoft.Authorization/policyAssignments/Deploy-SQL-DB-Auditing",
+              "Properties": {
+                "Description": "Deploy-SQL-Audit",
+                "DisplayName": "Deploy-SQL-Audit",
+                "NotScopes": null,
+                "Parameters": null,
+                "PolicyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/a6fb4358-5bf4-4ad7-ba82-2cd2f41ce5e9",
+                "Scope": "/providers/Microsoft.Management/managementGroups/ESPB-landingzones"
+              },
+              "ResourceId": "/providers/Microsoft.Management/managementGroups/ESPB-landingzones/providers/Microsoft.Authorization/policyAssignments/Deploy-SQL-DB-Auditing",
+              "ResourceName": "Deploy-SQL-DB-Auditing",
+              "ResourceType": "Microsoft.Authorization/policyAssignments",
+              "Sku": {
+                "name": "A0",
+                "tier": "Free"
+              }
+            },
+            {
+              "Identity": {
+                "principalId": "40199b2c-49af-464c-bc26-9e79e274e52a",
+                "tenantId": "dfdd3041-d767-4ff7-9269-89ee126700e4",
+                "type": "SystemAssigned"
+              },
+              "Location": "uksouth",
+              "Name": "Deploy-VM-Backup",
+              "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/ESPB-landingzones/providers/Microsoft.Authorization/policyAssignments/Deploy-VM-Backup",
+              "Properties": {
+                "Description": "Deploy-VM-Backup",
+                "DisplayName": "Deploy-VM-Backup",
+                "NotScopes": null,
+                "Parameters": {},
+                "PolicyDefinitionId": "/providers/Microsoft.Management/managementGroups/ESPB/providers/Microsoft.Authorization/policyDefinitions/Deploy-AzureBackup-on-VM",
+                "Scope": "/providers/Microsoft.Management/managementGroups/ESPB-landingzones"
+              },
+              "ResourceId": "/providers/Microsoft.Management/managementGroups/ESPB-landingzones/providers/Microsoft.Authorization/policyAssignments/Deploy-VM-Backup",
+              "ResourceName": "Deploy-VM-Backup",
+              "ResourceType": "Microsoft.Authorization/policyAssignments",
+              "Sku": {
+                "name": "A0",
+                "tier": "Free"
+              }
+            },
+            {
+              "Identity": {
+                "principalId": "e37a1dd9-3773-4067-bc04-df13d5354457",
+                "tenantId": "dfdd3041-d767-4ff7-9269-89ee126700e4",
+                "type": "SystemAssigned"
+              },
+              "Location": "uksouth",
+              "Name": "Enforce-SQL-Encryption",
+              "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/ESPB-landingzones/providers/Microsoft.Authorization/policyAssignments/Enforce-SQL-Encryption",
+              "Properties": {
+                "Description": "Deploy-SQL-Security",
+                "DisplayName": "Deploy-SQL-Security",
+                "NotScopes": null,
+                "Parameters": null,
+                "PolicyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/86a912f6-9a06-4e26-b447-11b16ba8659f",
+                "Scope": "/providers/Microsoft.Management/managementGroups/ESPB-landingzones"
+              },
+              "ResourceId": "/providers/Microsoft.Management/managementGroups/ESPB-landingzones/providers/Microsoft.Authorization/policyAssignments/Enforce-SQL-Encryption",
+              "ResourceName": "Enforce-SQL-Encryption",
+              "ResourceType": "Microsoft.Authorization/policyAssignments",
+              "Sku": {
+                "name": "A0",
+                "tier": "Free"
+              }
+            }
+          ],
+          "roleDefinitions": [],
+          "roleAssignments": [
+            {
+              "Id": "/providers/Microsoft.Management/managementGroups/ESPB-landingzones/providers/Microsoft.Authorization/roleAssignments/c00e742d-51ba-56fc-bb61-26894219e5e0",
+              "Name": "c00e742d-51ba-56fc-bb61-26894219e5e0",
+              "properties": {
+                "DisplayName": "Deploy-VM-Backup",
+                "ObjectType": "ServicePrincipal",
+                "PrincipalId": "40199b2c-49af-464c-bc26-9e79e274e52a",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
+                "RoleDefinitionName": "Owner"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            },
+            {
+              "Id": "/providers/Microsoft.Management/managementGroups/ESPB-landingzones/providers/Microsoft.Authorization/roleAssignments/736662a2-7cac-5329-8182-c0f2452f9ac7",
+              "Name": "736662a2-7cac-5329-8182-c0f2452f9ac7",
+              "properties": {
+                "DisplayName": "Deploy-SQL-DB-Auditing",
+                "ObjectType": "ServicePrincipal",
+                "PrincipalId": "87442fef-8313-4b85-93f6-a19ad631b1fd",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
+                "RoleDefinitionName": "Owner"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            },
+            {
+              "Id": "/providers/Microsoft.Management/managementGroups/ESPB-landingzones/providers/Microsoft.Authorization/roleAssignments/a17be96d-e555-4e42-8061-eef2f6938de9",
+              "Name": "a17be96d-e555-4e42-8061-eef2f6938de9",
+              "properties": {
+                "DisplayName": "Prakash Beegala",
+                "ObjectType": "User",
+                "PrincipalId": "dfd13bbc-b371-4ddd-99c8-c90c89c9c9b2",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
+                "RoleDefinitionName": "Owner"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            },
+            {
+              "Id": "/providers/Microsoft.Management/managementGroups/ESPB-landingzones/providers/Microsoft.Authorization/roleAssignments/33b59e4b-31e4-5ce9-a8c6-b17502ffbf78",
+              "Name": "33b59e4b-31e4-5ce9-a8c6-b17502ffbf78",
+              "properties": {
+                "DisplayName": "Enforce-SQL-Encryption",
+                "ObjectType": "ServicePrincipal",
+                "PrincipalId": "e37a1dd9-3773-4067-bc04-df13d5354457",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
+                "RoleDefinitionName": "Owner"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

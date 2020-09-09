@@ -1,0 +1,71 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Id": "/providers/Microsoft.Management/managementGroups/ESPB-platform",
+        "Type": "/providers/Microsoft.Management/managementGroups",
+        "Name": "ESPB-platform",
+        "TenantId": "dfdd3041-d767-4ff7-9269-89ee126700e4",
+        "DisplayName": "ESPB-platform",
+        "UpdatedTime": "0001-01-01T00:00:00Z",
+        "UpdatedBy": null,
+        "ParentId": "/providers/Microsoft.Management/managementGroups/ESPB",
+        "ParentName": "ESPB",
+        "ParentDisplayName": "ESPB",
+        "Children": [
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/ESPB-management",
+            "Name": "ESPB-management",
+            "DisplayName": "ESPB-management",
+            "Children": null
+          },
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/ESPB-identity",
+            "Name": "ESPB-identity",
+            "DisplayName": "ESPB-identity",
+            "Children": null
+          },
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/ESPB-connectivity",
+            "Name": "ESPB-connectivity",
+            "DisplayName": "ESPB-connectivity",
+            "Children": [
+              {
+                "Type": "/subscriptions",
+                "Id": "/subscriptions/744b58a7-ccc1-473f-bfb1-177e8f85f20a",
+                "Name": "744b58a7-ccc1-473f-bfb1-177e8f85f20a",
+                "DisplayName": "Visual Studio Enterprise",
+                "Children": null
+              }
+            ]
+          }
+        ],
+        "properties": {
+          "policyDefinitions": [],
+          "policySetDefinitions": [],
+          "policyAssignments": [],
+          "roleDefinitions": [],
+          "roleAssignments": [
+            {
+              "Id": "/providers/Microsoft.Management/managementGroups/ESPB-platform/providers/Microsoft.Authorization/roleAssignments/26bc0a6e-2730-40c0-9f7e-c715ef18feb2",
+              "Name": "26bc0a6e-2730-40c0-9f7e-c715ef18feb2",
+              "properties": {
+                "DisplayName": "Prakash Beegala",
+                "ObjectType": "User",
+                "PrincipalId": "dfd13bbc-b371-4ddd-99c8-c90c89c9c9b2",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
+                "RoleDefinitionName": "Owner"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

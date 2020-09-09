@@ -1,0 +1,41 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Id": "/providers/Microsoft.Management/managementGroups/ESPB-online",
+        "Type": "/providers/Microsoft.Management/managementGroups",
+        "Name": "ESPB-online",
+        "TenantId": "dfdd3041-d767-4ff7-9269-89ee126700e4",
+        "DisplayName": "ESPB-online",
+        "UpdatedTime": "0001-01-01T00:00:00Z",
+        "UpdatedBy": null,
+        "ParentId": "/providers/Microsoft.Management/managementGroups/ESPB-landingzones",
+        "ParentName": "ESPB-landingzones",
+        "ParentDisplayName": "ESPB-landingzones",
+        "Children": null,
+        "properties": {
+          "policyDefinitions": [],
+          "policySetDefinitions": [],
+          "policyAssignments": [],
+          "roleDefinitions": [],
+          "roleAssignments": [
+            {
+              "Id": "/providers/Microsoft.Management/managementGroups/ESPB-online/providers/Microsoft.Authorization/roleAssignments/5ccb8b18-1451-49fb-878a-6c3384609916",
+              "Name": "5ccb8b18-1451-49fb-878a-6c3384609916",
+              "properties": {
+                "DisplayName": "Prakash Beegala",
+                "ObjectType": "User",
+                "PrincipalId": "dfd13bbc-b371-4ddd-99c8-c90c89c9c9b2",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
+                "RoleDefinitionName": "Owner"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            }
+          ]
+        }
+      }
+    }
+  }
+}
