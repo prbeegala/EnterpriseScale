@@ -1,0 +1,57 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Type": "/subscriptions",
+        "Id": "/subscriptions/744b58a7-ccc1-473f-bfb1-177e8f85f20a",
+        "Name": "744b58a7-ccc1-473f-bfb1-177e8f85f20a",
+        "DisplayName": "Visual Studio Enterprise",
+        "Children": null,
+        "properties": {
+          "policyDefinitions": [],
+          "policySetDefinitions": [],
+          "policyAssignments": [
+            {
+              "Identity": null,
+              "Location": null,
+              "Name": "DataProtectionSecurityCenter",
+              "PolicyAssignmentId": "/subscriptions/744b58a7-ccc1-473f-bfb1-177e8f85f20a/providers/Microsoft.Authorization/policyAssignments/DataProtectionSecurityCenter",
+              "Properties": {
+                "Description": "This policy assignment was automatically created by Azure Security Center",
+                "DisplayName": "ASC DataProtection (subscription: 744b58a7-ccc1-473f-bfb1-177e8f85f20a)",
+                "NotScopes": null,
+                "Parameters": null,
+                "PolicyDefinitionId": "/providers/Microsoft.Authorization/policySetDefinitions/9cb3cc7a-b39b-4b82-bc89-e5a5d9ff7b97",
+                "Scope": "/subscriptions/744b58a7-ccc1-473f-bfb1-177e8f85f20a"
+              },
+              "ResourceId": "/subscriptions/744b58a7-ccc1-473f-bfb1-177e8f85f20a/providers/Microsoft.Authorization/policyAssignments/DataProtectionSecurityCenter",
+              "ResourceName": "DataProtectionSecurityCenter",
+              "ResourceType": "Microsoft.Authorization/policyAssignments",
+              "Sku": {
+                "name": "A1",
+                "tier": "Standard"
+              }
+            }
+          ],
+          "roleDefinitions": [],
+          "roleAssignments": [
+            {
+              "Id": "/subscriptions/744b58a7-ccc1-473f-bfb1-177e8f85f20a/providers/Microsoft.Authorization/roleAssignments/64153a79-039b-4905-a7f3-72a7252ce97e",
+              "Name": "64153a79-039b-4905-a7f3-72a7252ce97e",
+              "properties": {
+                "DisplayName": "Prakash Beegala",
+                "ObjectType": "User",
+                "PrincipalId": "dfd13bbc-b371-4ddd-99c8-c90c89c9c9b2",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c",
+                "RoleDefinitionName": "Contributor"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

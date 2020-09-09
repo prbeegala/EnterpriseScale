@@ -1,0 +1,117 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Id": "/providers/Microsoft.Management/managementGroups/dfdd3041-d767-4ff7-9269-89ee126700e4",
+        "Type": "/providers/Microsoft.Management/managementGroups",
+        "Name": "dfdd3041-d767-4ff7-9269-89ee126700e4",
+        "TenantId": "dfdd3041-d767-4ff7-9269-89ee126700e4",
+        "DisplayName": "Tenant Root Group",
+        "UpdatedTime": "0001-01-01T00:00:00Z",
+        "UpdatedBy": null,
+        "ParentId": null,
+        "ParentName": null,
+        "ParentDisplayName": null,
+        "Children": [
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/ESPB",
+            "Name": "ESPB",
+            "DisplayName": "ESPB",
+            "Children": [
+              {
+                "Type": "/providers/Microsoft.Management/managementGroups",
+                "Id": "/providers/Microsoft.Management/managementGroups/ESPB-landingzones",
+                "Name": "ESPB-landingzones",
+                "DisplayName": "ESPB-landingzones",
+                "Children": [
+                  {
+                    "Type": "/providers/Microsoft.Management/managementGroups",
+                    "Id": "/providers/Microsoft.Management/managementGroups/ESPB-online",
+                    "Name": "ESPB-online",
+                    "DisplayName": "ESPB-online",
+                    "Children": null
+                  },
+                  {
+                    "Type": "/providers/Microsoft.Management/managementGroups",
+                    "Id": "/providers/Microsoft.Management/managementGroups/ESPB-sap",
+                    "Name": "ESPB-sap",
+                    "DisplayName": "ESPB-sap",
+                    "Children": null
+                  },
+                  {
+                    "Type": "/providers/Microsoft.Management/managementGroups",
+                    "Id": "/providers/Microsoft.Management/managementGroups/ESPB-corp",
+                    "Name": "ESPB-corp",
+                    "DisplayName": "ESPB-corp",
+                    "Children": null
+                  }
+                ]
+              },
+              {
+                "Type": "/providers/Microsoft.Management/managementGroups",
+                "Id": "/providers/Microsoft.Management/managementGroups/ESPB-platform",
+                "Name": "ESPB-platform",
+                "DisplayName": "ESPB-platform",
+                "Children": [
+                  {
+                    "Type": "/providers/Microsoft.Management/managementGroups",
+                    "Id": "/providers/Microsoft.Management/managementGroups/ESPB-management",
+                    "Name": "ESPB-management",
+                    "DisplayName": "ESPB-management",
+                    "Children": null
+                  },
+                  {
+                    "Type": "/providers/Microsoft.Management/managementGroups",
+                    "Id": "/providers/Microsoft.Management/managementGroups/ESPB-identity",
+                    "Name": "ESPB-identity",
+                    "DisplayName": "ESPB-identity",
+                    "Children": null
+                  },
+                  {
+                    "Type": "/providers/Microsoft.Management/managementGroups",
+                    "Id": "/providers/Microsoft.Management/managementGroups/ESPB-connectivity",
+                    "Name": "ESPB-connectivity",
+                    "DisplayName": "ESPB-connectivity",
+                    "Children": [
+                      {
+                        "Type": "/subscriptions",
+                        "Id": "/subscriptions/744b58a7-ccc1-473f-bfb1-177e8f85f20a",
+                        "Name": "744b58a7-ccc1-473f-bfb1-177e8f85f20a",
+                        "DisplayName": "Visual Studio Enterprise",
+                        "Children": null
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "Type": "/providers/Microsoft.Management/managementGroups",
+                "Id": "/providers/Microsoft.Management/managementGroups/ESPB-decomissioned",
+                "Name": "ESPB-decomissioned",
+                "DisplayName": "ESPB-decomissioned",
+                "Children": null
+              },
+              {
+                "Type": "/providers/Microsoft.Management/managementGroups",
+                "Id": "/providers/Microsoft.Management/managementGroups/ESPB-sandboxes",
+                "Name": "ESPB-sandboxes",
+                "DisplayName": "ESPB-sandboxes",
+                "Children": null
+              }
+            ]
+          }
+        ],
+        "properties": {
+          "policyDefinitions": [],
+          "policySetDefinitions": [],
+          "policyAssignments": [],
+          "roleDefinitions": [],
+          "roleAssignments": []
+        }
+      }
+    }
+  }
+}

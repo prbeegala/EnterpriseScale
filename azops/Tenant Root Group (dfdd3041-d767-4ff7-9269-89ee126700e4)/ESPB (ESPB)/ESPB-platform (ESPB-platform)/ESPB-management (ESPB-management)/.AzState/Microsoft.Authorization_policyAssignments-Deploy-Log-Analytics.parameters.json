@@ -1,0 +1,49 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Identity": {
+          "principalId": "c63a575b-fc6c-4038-a49e-67e4b22ba0cb",
+          "tenantId": "dfdd3041-d767-4ff7-9269-89ee126700e4",
+          "type": "SystemAssigned"
+        },
+        "Location": "uksouth",
+        "Name": "Deploy-Log-Analytics",
+        "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/ESPB-management/providers/Microsoft.Authorization/policyAssignments/Deploy-Log-Analytics",
+        "Properties": {
+          "Description": "Deploy-Log-Analytics",
+          "DisplayName": "Deploy-Log-Analytics",
+          "NotScopes": null,
+          "Parameters": {
+            "automationAccountName": {
+              "value": "ESPB-a-744b58a7-ccc1-473f-bfb1-177e8f85f20a"
+            },
+            "automationRegion": {
+              "value": "uksouth"
+            },
+            "rgName": {
+              "value": "ESPB-mgmt"
+            },
+            "workspaceName": {
+              "value": "ESPB-la-744b58a7-ccc1-473f-bfb1-177e8f85f20a"
+            },
+            "workspaceRegion": {
+              "value": "uksouth"
+            }
+          },
+          "PolicyDefinitionId": "/providers/Microsoft.Management/managementGroups/ESPB/providers/Microsoft.Authorization/policyDefinitions/Deploy-Log-Analytics",
+          "Scope": "/providers/Microsoft.Management/managementGroups/ESPB-management"
+        },
+        "ResourceId": "/providers/Microsoft.Management/managementGroups/ESPB-management/providers/Microsoft.Authorization/policyAssignments/Deploy-Log-Analytics",
+        "ResourceName": "Deploy-Log-Analytics",
+        "ResourceType": "Microsoft.Authorization/policyAssignments",
+        "Sku": {
+          "name": "A0",
+          "tier": "Free"
+        }
+      }
+    }
+  }
+}

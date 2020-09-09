@@ -1,0 +1,20 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Id": "/providers/Microsoft.Management/managementGroups/ESPB-platform/providers/Microsoft.Authorization/roleAssignments/26bc0a6e-2730-40c0-9f7e-c715ef18feb2",
+        "Name": "26bc0a6e-2730-40c0-9f7e-c715ef18feb2",
+        "properties": {
+          "DisplayName": "Prakash Beegala",
+          "ObjectType": "User",
+          "PrincipalId": "dfd13bbc-b371-4ddd-99c8-c90c89c9c9b2",
+          "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
+          "RoleDefinitionName": "Owner"
+        },
+        "ResourceType": "Microsoft.Authorization/roleAssignments"
+      }
+    }
+  }
+}
